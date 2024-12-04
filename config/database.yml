@@ -1,0 +1,14 @@
+# do not create a queue: section for your test environment
+production:
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+
+development:
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
+  encoding: utf8
+  pool: 5
+  timeout: 5000
